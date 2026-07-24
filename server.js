@@ -8,11 +8,8 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static assets from root and subroutes
-app.use('/assets/css', express.static(__dirname));
-app.use('/assets/js', express.static(__dirname));
-app.use('/assets/images', express.static(__dirname));
-app.use('/assets', express.static(__dirname));
+// Serve static assets
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use(express.static(__dirname));
 
 // Fallback to index.html
