@@ -1,0 +1,15 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "Foodie - Supper delicious Burger in town!",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'No build required'"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
